@@ -1,0 +1,26 @@
+{
+  "name": "firebase-local-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
+  "engines": {
+    "node": "7.6.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bunyan": "^1.8.10",
+    "config": "^1.26.1",
+    "firebase": "^4.1.5",
+    "firebase-admin": "^5.1.0",
+    "firebase-server": "^0.10.1"
+  },
+  "devDependencies": {
+    "@strv/eslint-config-javascript": "^7.2.0",
+    "babel-eslint": "^7.2.0",
+    "eslint": "^4.3.0"
+  }
+}

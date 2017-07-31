@@ -1,11 +1,12 @@
 # Firebase Local 
- - https://github.com/urish/firebase-server
 
 Useful for emulating the Firebase server in tests.
 This is enough to make firebase admin work if you don't want to check any rules and don't upload any rule file. 
 !!IMPORTANT!! auth().createCustomToken() dosn't work
 
-# Install on Travis via docker
+- https://github.com/urish/firebase-server
+
+## Install on Travis via docker
 Check file `.travis.yml`
   - set dist to trusty `dist: trusty`
   - install docker-compose in `before_install`
@@ -19,7 +20,7 @@ Check file `.travis.yml`
   - shutdown docker in `after_script`
     - docker-compose down
 
-# Running the project
+## Running the project
 1. `npm i` - to install node.js packages
 2. `./bin/infra-start` - initialize docker with firebase server
 3. `npm start`

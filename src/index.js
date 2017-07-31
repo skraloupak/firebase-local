@@ -1,6 +1,7 @@
 const firebase = require('firebase-admin')
 const log = require('./common/logger')
 
+// This is enough to make firebase admin work if you don't want to check any rules and don't upload any rule file.
 const credentials = {
   databaseURL: 'ws://127.0.1:5000',
   credential: {
@@ -12,7 +13,7 @@ const credentials = {
 }
 
 const app = firebase.initializeApp(credentials)
-const client = app.database().ref('states')
+const client = app.database().ref()
 
 async function pushValue() {
   await client.update({

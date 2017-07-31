@@ -1,6 +1,12 @@
-# Firebase Local
+# Firebase Local 
+ - https://github.com/urish/firebase-server
+
 Useful for emulating the Firebase server in tests.
-Install for travis -> `.travis.yml`
+This is enough to make firebase admin work if you don't want to check any rules and don't upload any rule file. 
+!!IMPORTANT!! auth().createCustomToken() dosn't work
+
+# Install on Travis via docker
+Check file `.travis.yml`
   - set dist to trusty `dist: trusty`
   - install docker-compose in `before_install`
     - curl -sSL "https://get.docker.com/gpg" | sudo -E apt-key add -
